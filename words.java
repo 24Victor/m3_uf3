@@ -16,21 +16,35 @@ public class words{
 
             switch(opcio){
                 case 1:
-                    
+                wordGame();    
                 break;
 
                 case 2:
-
+                saveRegister();
                 break;
-
-                case 3:
                 
+                case 3:
+                gestApp();
                 break;
+                
+                case 4:
+                // No fa res, el bucle se trenca i se surt del programa
+                break;
+            default:
+                System.out.println("Opció inválida");
             }
-        } while (opcio <= 4);
+        } while (opcio != 4);
     }
 
-    public static void wordgame (){
+    public static void wordGame (){
+        
+    }
+    
+    public static void saveRegister(){
+
+    }
+    
+    public static void gestApp(){
         
     }
 }
