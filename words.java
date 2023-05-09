@@ -31,7 +31,7 @@ public class words{
                 // No fa res, el bucle se trenca i se surt del programa
                 break;
             default:
-                System.out.println("Opció inválida");
+                System.out.println("\n Opció inválida");
             }
         } while (opcio != 4);
     }
