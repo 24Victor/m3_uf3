@@ -5,5 +5,5 @@ public class main{
         Scanner sc = new Scanner(System.in);
         int option = 0;
         do {}
-   
+    }
 }
