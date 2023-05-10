@@ -1,0 +1,23 @@
+    public static String opcionsMenu(menuInicial){
+        System.out.println("============================");
+        System.out.println("Benvingut al programa WORDS!");
+        System.out.println("============================");
+        System.out.println("Prem 1 per a jugar en catala o en angles");
+        System.out.println("Prem 2 per a mostrar el registre");
+        System.out.println("Prem 3 per a gestionar l'aplicació");
+        System.out.println("Prem 4 per a sortir del programa");
+
+        return 
+    }
+
+    public static void wordGame (){
+           
+    }
+    
+    public static void saveRegister(){
+
+    }
+
+    public static void gestApp(){
+        
+    }
