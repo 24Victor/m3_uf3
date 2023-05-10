@@ -1,4 +1,7 @@
+package MAIN;
 import java.util.*;
+
+import Words;
 public class WApp{
     public static void main(String[]args){
         
@@ -73,7 +76,7 @@ public class WApp{
 
         if(existeix){
             
-            int u =  opcionsMenu({"segur .... S/N"});
+            int u = opcionsMenu({"segur .... S/N"});
             if( u == 1){
                 modificaLinea(paraula, linea);
             }
