@@ -1,6 +1,4 @@
-package MAIN;
 import java.util.*;
-import Words;
 
 public class WApp{
     public static void main(String[]args){
@@ -8,14 +6,14 @@ public class WApp{
         int opcio = 0;
         Words[] llistaParaules = new Words();
         do {
-            String[] menuInicial = {"jugar", "gestionar"};
-            opcio = opcionsMenu(menuInicial);
-    
+            String[] menuInicial = {"Prem 1 per a jugar", "Prem 2 per a gestionar"};
+            opcio = (menuInicial);
+            int decisio = sc.nextInt();
 
             switch(opcio){
                 case 1:
                     wordGame();
-                    llegirFitxer("paraules-partides.txt", llistaParaules);
+                    llegirFitxer("paraules-partides.txt", Words)
                 break;
                 
                 case 2:
@@ -26,10 +24,6 @@ public class WApp{
                 System.out.println("\n Opció inválida");
             }
         } while (opcio != 2);
-    }
-
-    private static int opcionsMenu(String[] menuInicial) {
-        return 0;
     }
 
     public static String gestApp(){
@@ -63,7 +57,11 @@ public class WApp{
     /*Afegir una parella de paraules al registre de paraules-partides. Ens demanarà la paraula en català i la
      paraula en anglès.*/
     public static void afegir(){
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introdueix la paraula en català:");
+        String paraulaCatala = sc.nextLine();
+        System.out.println("Introdueix la paraula en anglès:");
+        String paraulaAngles = sc.nextLine();
     }
      /*Modificar una parella de paraules del registre deaules-partides. Ens
      demanarà la paraula en català o en anglès. Comp
@@ -72,24 +70,27 @@ public class WApp{
    public static void modificar() {
    
         /*Demanar paraula en angles o en catala */
-        String paraula = demanarParaula();
-
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introdueix la paraula en català o en anglès:");
+        String paraula = sc.next();
+        
         int linia = 0;
-        linia = buscar(paraula);        boolean existeix = comprovaInfoAssiciada(paraula);
+        boolean existeix = comprovaInfoAssiciada(paraula);
+
+        linia = buscar(paraula);       
 
 
         if(existeix){
-            
-            int u = opcionsMenu({"segur .... S/N"});
-            if( u == 1){
-                modificaLinea(paraula, linea);
+            int opcio = opcionsMenu({"segur .... S/N"});
+            if (opcio == 1) {
+                modificaLinia(paraula, linia);
             }
-
         }
         else{
+            System.out.println("La paraula no té informació associada.");
 
         }
-    }
+    } 
 
     public static void (esborrar){
         
