@@ -15,6 +15,7 @@ class IOFile{
             Scanner lector = new Scanner(file);
 			//Si s'executa aquesta instrucció, s'ha obert el fitxer
 			while(lector.hasNextLine()) {
+                //GUARDAR LA LINEA EN UNA VARIABLE Y IMPRIMIRLA
 				System.out.println(lector.nextLine());
 		}
         
