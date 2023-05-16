@@ -1,0 +1,4 @@
+hello;hola;1;-1;
+bye;adeu;0;1;
+cat;gato;0;-1;
+cut;cortar;-1;-1;

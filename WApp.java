@@ -54,7 +54,9 @@ public class WApp{
         }
     }
 
-    /*Afegir una parella de paraules al registre de paraules-partides. Ens demanarà la paraula en català i la
+    
+
+	/*Afegir una parella de paraules al registre de paraules-partides. Ens demanarà la paraula en català i la
      paraula en anglès.*/
     public static void afegir(){
         Scanner sc = new Scanner(System.in);
@@ -72,7 +74,7 @@ public class WApp{
         /*Demanar paraula en angles o en catala */
         Scanner sc = new Scanner(System.in);
         System.out.println("Introdueix la paraula en català o en anglès:");
-        String paraula = sc.next();
+        String paraula = sc.nextLine();
         
         int linia = 0;
         boolean existeix = comprovaInfoAssiciada(paraula);
@@ -92,6 +94,24 @@ public class WApp{
         }
     } 
 
-    public static void (esborrar){
+    private static boolean comprovaInfoAssiciada(String paraula) {
+	return false;
+    }
+
+	private static int buscar(String paraula) {
+	
+    }
+
+	public static void esborrar(){
         
     }
+
+    private static int opcionsMenu(String[] menuInicial) {
+		
+	}
+
+	private static void consultar() {
+	}
+
+	private static void arxivar() {
+	}
