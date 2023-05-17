@@ -13,7 +13,7 @@ public class WApp{
             switch(opcio){
                 case 1:
                     wordGame();
-                    llegirFitxer("paraules-partides.txt", Words)
+                    llegirFitxer(paraules_partides, Word [] w)
                 break;
                 
                 case 2:
@@ -115,3 +115,6 @@ public class WApp{
 
 	private static void arxivar() {
 	}
+
+
+    
