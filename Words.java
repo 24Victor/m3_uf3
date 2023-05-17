@@ -71,8 +71,7 @@ public class Words{
 
     //Metodo to string
     public String toString() {
-        return "Words {" + "Paraula en angles: " + this.angles + " Paraula en catala: " + this.catala + 
-        " Paraula de C_A: " + C_A + " Paraula de A_C: " + A_C + " }";
+        return this.angles+ ";" + this.catala + ";" +C_A + ";" + A_C;
     }
 
     public static void main(String[]args){
