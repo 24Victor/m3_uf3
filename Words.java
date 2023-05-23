@@ -11,6 +11,7 @@ public class Words{
      * conte el numero 0 voldra dir que no s'ha intentat mai, 1 que la ha acertat, i -1 que la 
      * ha fallat 1 vegada.
      */
+
     public Words(String w){
         /*1.Convertir w en un array de cadenes de text*/
         String[] fila = w.split(";"); 
@@ -37,19 +38,19 @@ public class Words{
     
     //Getters
     public String getAngles() {
-        return angles;
+        return this.angles;
     }
 
     public String getCatala() {
-        return catala;
+        return this.catala;
     }
     
     public int getC_A() {
-        return C_A;
+        return this.C_A;
     }
     
     public int getA_C() {
-        return A_C;
+        return this.A_C;
     }
     
     //Setters
@@ -72,16 +73,5 @@ public class Words{
     //Metodo to string
     public String toString() {
         return this.angles+ ";" + this.catala + ";" +C_A + ";" + A_C;
-    }
-
-    public static void main(String[]args){
-        //Cadena de text tipus de linea de fitxer
-        String exempleliniafitxer = "bye;adeu;1;-1;";
-
-        //Crear un objecte a partir de la cadena de text
-        Words prova = new Words(exempleliniafitxer);
-    
-        //Imprimir el atributo del objete de testeig
-        System.out.println(prova);
     }
 }
