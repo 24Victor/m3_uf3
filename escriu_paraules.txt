@@ -1,4 +1,2 @@
 hello;hola;1;0
 bye;adeu;0;-1
-train;tren;-1;0
-mouse;ratoli;-1;1
